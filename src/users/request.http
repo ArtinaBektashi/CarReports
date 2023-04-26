@@ -3,15 +3,30 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-    "email" : "fdfdssd@gmail.com",
-    "password" : "fdsffsd"
+    "email" : "artina2@gmail.com",
+    "password" : "artina2"
 }
+
+### Sign in a new user
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+    "email" : "artina@gmail.com",
+    "password" : "artina"
+}
+
+### Sign out
+POST http://localhost:3000/auth/signout
+
+###Get the currenly signed in user
+GET http://localhost:3000/auth/whoami
 
 ### Get a user with id
 GET http://localhost:3000/auth/2
 
 ###Get users with email
-GET http://localhost:3000/auth?email=eeee@gmail.com
+GET http://localhost:3000/auth?email=fdfdssd@gmail.com
 
 ###Delete user with id
 DELETE http://localhost:3000/auth/3
@@ -23,3 +38,9 @@ content-type: application/json
 {
     "password": "aaaa"
 }
+
+###SET A COLOR
+GET http://localhost:3000/auth/colors/red
+
+### get the color
+GET http://localhost:3000/auth/colors
