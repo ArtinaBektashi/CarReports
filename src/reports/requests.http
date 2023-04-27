@@ -1,0 +1,14 @@
+### Create Report
+
+POST http://localhost:3000/reports
+Content-Type: application/json
+
+{
+    "make" : "bmw",
+    "model" : "sports",
+    "year" : 2023,
+    "mileage" : 1000,
+    "lng" : 0,
+    "lat" : 0,
+    "price" : 60000
+}
